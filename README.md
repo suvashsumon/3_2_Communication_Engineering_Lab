@@ -9,3 +9,5 @@
 3. Implementation of encoding and decoding using B8ZS and HDB3 scrambling techniques.
 4. Implementation of modulation and demodulation using ASK, FSK and PSK.
 5. Implementation of modulation and demodulation using AM, FM and PSK.
+     
+***[N.B: All the codes are implemented with MATLAB 2016a]***

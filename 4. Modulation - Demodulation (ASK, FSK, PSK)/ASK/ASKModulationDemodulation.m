@@ -5,7 +5,8 @@ bitrate = 1;
 % finding sampling time and rate
 sampling_rate = 1000;
 sampling_time = 1/sampling_rate;
-endtime = 0:sampling_time:end_time;
+end_time = length(signal)/bitrate;
+time = 0:sampling_time:end_time;
 
 % career freequency properties
 a = 3;

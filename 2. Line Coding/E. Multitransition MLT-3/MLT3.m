@@ -51,3 +51,5 @@ for i=2:bit_duration:length(output_data)
   endif
 endfor
 demodulated_data
+
+% no self synchronization, baseline wondering ache, dc component ache

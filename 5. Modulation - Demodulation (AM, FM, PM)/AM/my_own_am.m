@@ -1,8 +1,9 @@
+clc;
 t = 0:0.0001:1;
 
 % message signal
 fm = 4;
-am = 10;
+am = 3;
 ym = am*sin(2*pi*fm*t);
 
 % carrier signal

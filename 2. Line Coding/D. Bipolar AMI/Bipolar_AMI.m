@@ -41,3 +41,5 @@ for i=1:bit_duration:length(output_data)
   endif
 endfor
 demodulated_data
+
+% no dc component, no baseline wondering, no self synchronization

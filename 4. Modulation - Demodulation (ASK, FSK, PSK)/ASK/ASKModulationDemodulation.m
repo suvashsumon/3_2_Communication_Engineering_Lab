@@ -39,14 +39,16 @@ for i=1:length(modulatedSignal)
         index = index + 1;
     end
 end
-disp(index);
+
+%plotting
+bitDuration = length(modulatedSignal)/length(signal);
 subplot(3, 1, 1);
-stem(signal);
+plot(expandSignal(signal, bitDuration), 'linewidth', 2);
 title('Original Signal');
 hold on;
 subplot(3, 1, 2);
-stem(modulatedSignal);
+plot(modulatedSignal, 'linewidth', 2);
 title('Modulated Signal');
 subplot(3, 1, 3);
-stem(demodulatedSignal);
+plot(expandSignal(demodulatedSignal, bitDuration), 'linewidth', 2);
 title('Demodulated Signal');

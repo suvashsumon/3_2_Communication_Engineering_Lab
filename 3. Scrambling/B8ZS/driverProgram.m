@@ -6,12 +6,18 @@ encodedSignal = b8zsEncode(bits, last);
 decodedSignal = b8zsDecode(encodedSignal, last);
 
 subplot(3, 1, 1);
+%plot(expandSignal(bits, 100), 'linewidth', 2);
 stem(bits);
+grid on;
 title('Original Signal');
 hold on;
 subplot(3, 1, 2);
+%plot(expandSignal(encodedSignal, 100), 'linewidth', 2);
 stem(encodedSignal);
+grid on;
 title('Encoded Signal');
 subplot(3, 1, 3);
+%plot(expandSignal(decodedSignal, 100), 'linewidth', 2);
 stem(decodedSignal);
+grid on;
 title('Decoded Signal');

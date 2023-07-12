@@ -34,3 +34,5 @@ for i=1:bit_duration:length(output_data)
   index = index + 1;
 endfor
 decoded_data
+
+% no self-synchronization, dc ache, baseline wondaring ache

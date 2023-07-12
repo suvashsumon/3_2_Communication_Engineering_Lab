@@ -49,3 +49,5 @@ for i=1:bit_duration:length(output_data)
   endif
 endfor
 decoded_data
+
+% no self synchronization , dc ache
